@@ -48,6 +48,9 @@ const Home = () => {
         else if(message.includes("who created you")){
             finalText="Master Arpit created me.."
         }
+        else if(message.includes("how are you")){
+            finalText="I don't have feelings like humans do, but I'm here and ready to assist you! How can I help you today?"
+        }
         else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
             window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
             finalText = "This is what i found on internet regarding " + message;
@@ -72,6 +75,10 @@ const Home = () => {
         else if(message.includes('date')) {
             const date = new Date().toLocaleString(undefined, {month: "short", day: "numeric"})
             finalText = date;
+        }
+        else if(message.includes('vs code')) {
+            window.open('vscode:///')
+            finalText = "Opening VSCode";
         }
     
         else if(message.includes('calculator')) {
