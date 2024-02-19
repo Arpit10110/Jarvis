@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+h3{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+}
+.Activate-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Activate-me .Icons{
+    font-size: 5vw;
+    margin-left: 1rem;
+    color: #ff2a2a;
+    cursor: pointer;
+}
+.imageJ{
+    display: flex;
+    justify-content: center;
+    height: 66vh;
+}
+.imageJ img{
+    width: 40%;
+}
+.trans {
+    text-align: center;
+    font-size: 2vw;
+    margin-left:1rem;
+}
+@media only  screen and (width<= 600px){
+    h3 {
+        font-size: 9vw;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .imageJ {
+        display: flex;
+        justify-content: center;
+        height: 51vh;
+    }
+    .imageJ img {
+        width: 95%;
+        object-fit: contain;
+    }
+    .Activate-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Activate-me .Icons {
+        font-size: 20vw;
+        margin-left: 1rem;
+        color: #ff2a2a;
+        cursor: pointer;
+    }
+    .trans {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}
