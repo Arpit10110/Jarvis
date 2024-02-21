@@ -3,8 +3,9 @@ import jarvis from "../assets/jarvis.png";
 import MicIcon from '@mui/icons-material/Mic';
 import speech, { useSpeechRecognition } from 'react-speech-recognition';
 import "../Style/Home.css";
-
+import backchodi from "../assets/backchodi.m4a"
 const Home = () => {
+    var audio = new Audio(backchodi);
     const {
         transcript,
         listening,
@@ -28,6 +29,10 @@ const Home = () => {
         else if(message.includes("open google")){
             window.open("https://google.com", "_blank");
             finalText="Opening Google..."
+        }
+        else if(message.includes("madharchod") || message.includes("madrachod") || message.includes("bahan chod")  ){
+            finalText=" "
+            audio.play();
         }
         else if(message.includes("open youtube")){
             window.open("https://youtube.com", "_blank");
